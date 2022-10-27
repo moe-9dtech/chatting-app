@@ -1,0 +1,44 @@
+
+a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+:root {
+    --black: #000;
+    --blue-grey-shade: rgb(219, 237, 253);
+}
+
+/*****************************************
+*********Form Styling Starts here*********
+******************************************/
+.login-form {
+    margin-top: 3rem;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(9, 2, 61);
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.login-form input{
+    display: block;
+    margin: 15px auto;
+    border: 1px solid var(--black);
+    border-radius: 4px;
+    outline: none;
+    text-align: center;
+    padding: 3px;
+}
+
+.login-form a {
+    color: var(--blue-grey-shade);
+}
+
+.login-form .btn {
+    display: block;
+    margin: 25px auto;
+    background-color: var(--blue-grey-shade);
+    font-weight: 700;
+}
