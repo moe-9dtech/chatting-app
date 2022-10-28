@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Live Streamer</title>
+</head>
+<header>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Live Streamer</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Pakistan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">India</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Bangladesh</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<body>
+    <div class="__categories">
+      <div class="text-center">
+        <p class="text-white">Menu</p>
+      </div>
+      <ul class="list-unstyled cat-list">
+        <li class="active">
+          <span><i class="fa-solid fa-baseball-bat-ball"></i></span><a href=""><p>Cricket</p></a>
+        </li>
+        <li>
+          <span><i class="fa-solid fa-futbol"></i></span><a href=""><p>Football</p></a>
+        </li>
+        <li>
+          <span><i class="fa-solid fa-mosque"></i></span><a href=""><p>Islamic</p></a>
+        </li>
+        <li>
+         <span><i class="fa-solid fa-people-roof"></i></span><a href=""><p>General</p></a>
+        </li>
+      </ul>
+    </div><!--.__categories-->
+    <div class="container __main-body">
+      <iframe frameborder="0" marginheight="0" marginwidth="0" height="520" src="http://tv.gundapanda.com:100/hls/netscope-1.m3u8" name="iframe_a" scrolling="no" width="70%" video-controls>Your browser doesn't support iframes</iframe>
+      <embed width="300" src="http://tv.gundapanda.com:100/hls/netscope-1.m3u8
+      " type="application/x-mplayer2" autoplay="true"></embed>
+
+</body>
+<footer>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src=""></script><script src="https://kit.fontawesome.com/d1ca963112.js" crossorigin="anonymous"></script>
+    <script src="m3uStreamPlayer.js"></script>
+    <script src="index.js"></script>
+</footer>
+</html>
