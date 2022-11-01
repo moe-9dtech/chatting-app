@@ -1,16 +1,10 @@
-import React, {Component} from 'react';
-
-class UserProfile extends Component {
-   
-    render() { 
-        return (
-            <React.Fragment>
-                <div className="__left-menue">
-                    <span><i class="fa-solid fa-user"></i></span><p>General</p>
-                </div>
-            </React.Fragment>
-        );
-    }
+import React from "react";
+function UserProfile() {
+    return ( 
+        <div>
+            <h1>User Profile Page</h1>
+        </div>
+     );
 }
- 
+
 export default UserProfile;

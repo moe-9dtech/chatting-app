@@ -1,6 +1,17 @@
 import React, {Component} from 'react';
 import './signUpStyle.css';
+import {Router, useNavigation } from "react-router-dom";
+function loginButton (props) {
+let navigate = useNavigation();
+return (
+    <button
+    onClick={
+        props.state.userName === 'rocket' && props.state.password === "123" ? navigate("/profile"): <p>Invalid Credentials</p>
+    }
+    >Login</button>
+)
 
+}
 class LoginCard extends Component { 
     state = {
         userName: '',
@@ -12,22 +23,21 @@ class LoginCard extends Component {
     getPass = (event) => {
         this.setState({password: event.target.value});
     }
-    loginFunction = (event) => {
-         const userName = this.state.userName;
-         const password = this.state.password;
-         this.setState({userName})
-         if (userName === "rocket" && password === "123321"){
-            console.log("you are logged in!");
-         } else {
-            console.log("incorrect credentials!!");
-         }
-    }
+    // loginFunction = (event) => {
+    //     event.preventDefault();
+    //      const userName = this.state.userName;
+    //      const password = this.state.password;
+    //      this.setState({userName})
+    //      if (userName === "rocket" && password === "123321"){
+    //      } else {
+    //         console.log("incorrect credentials!!");
+    //      }
+    // }
     render() { 
-        
         return (
             <React.Fragment>
                 <div className="container __cardContainer text-center">
-                    <form className='login-form' action="#">
+                    <form className='login-form'>
                         <input 
                             className='name' 
                             type="text" 
@@ -40,12 +50,12 @@ class LoginCard extends Component {
                             placeholder='Password' 
                             onChange={this.getPass}
                         />
-                        <button 
+                        {/* <button 
                             className="btn login-btn" 
-                            onClick={this.loginFunction}
-                        >
-                            Login
-                        </button>
+                            onClick={ }
+                        >Login
+                        </button> */}
+                        <loginButton />
                         <a href="#"><p>Forgot Password?</p></a>
                         <button className='btn google-btn'>
                             <span><i className="fa-brands fa-google"></i> </span>
